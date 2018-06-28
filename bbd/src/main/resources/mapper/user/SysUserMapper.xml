@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.user.mapper.SysUserMapper">
+  <resultMap id="BaseResultMap" type="com.example.dao.user.entity.SysUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="role_id" jdbcType="INTEGER" property="roleId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="gender" jdbcType="VARCHAR" property="gender" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="small_image" jdbcType="VARCHAR" property="smallImage" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="qq" jdbcType="VARCHAR" property="qq" />
+    <result column="msn" jdbcType="VARCHAR" property="msn" />
+    <result column="last_login_dt" jdbcType="TIMESTAMP" property="lastLoginDt" />
+    <result column="access_token" jdbcType="VARCHAR" property="accessToken" />
+    <result column="user_type" jdbcType="VARCHAR" property="userType" />
+    <result column="enabled" jdbcType="DECIMAL" property="enabled" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_dt" jdbcType="TIMESTAMP" property="createDt" />
+    <result column="modify_by" jdbcType="VARCHAR" property="modifyBy" />
+    <result column="modify_dt" jdbcType="TIMESTAMP" property="modifyDt" />
+    <result column="org_id" jdbcType="INTEGER" property="orgId" />
+    <result column="group_id" jdbcType="INTEGER" property="groupId" />
+    <result column="salt" jdbcType="VARCHAR" property="salt" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="yht_user_id" jdbcType="VARCHAR" property="yhtUserId" />
+    <result column="tenant_id" jdbcType="VARCHAR" property="tenantId" />
+    <result column="core_user_id" jdbcType="VARCHAR" property="coreUserId" />
+    <result column="dr" jdbcType="INTEGER" property="dr" />
+  </resultMap>
+</mapper>

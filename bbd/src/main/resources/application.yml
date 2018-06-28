@@ -1,0 +1,26 @@
+server:
+  port: 8086
+spring:
+    datasource:
+        name: cmmi
+        url: jdbc:mysql://192.168.0.12/xfs?useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: mingming
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        filters: stat
+        maxActive: 20
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.example.dao.user.entity
